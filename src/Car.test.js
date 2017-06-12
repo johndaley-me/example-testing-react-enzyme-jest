@@ -26,7 +26,7 @@ describe('<Car />', () => {
     expect(engine.prop('type')).toEqual('diesel');
   });
   // check actions
-  it('calls hanldeStartCar on button click', function () {
+  it('calls handleStartCar on button click', function () {
     const button = wrapper.find('#car--start');
     expect(button).toHaveLength(1);
     button.simulate('click');
