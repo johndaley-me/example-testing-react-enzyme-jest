@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from './App';
+import { App } from './App';
 import Car from './Car';
 import * as actions from './actions';
 
@@ -14,8 +14,12 @@ it('renders welcome message', () => {
   expect(wrapper.contains(welcome)).toEqual(true);
 });
 it('renders Car', () => {
-  const wrapper = shallow(<App />);
+  const props = {
+    isRunning: false,
+    handleStartCar: () => {}
+  };
+  const wrapper = shallow(<App {...props} />);
   const car = wrapper.find(Car);
   expect(car).toHaveLength(1);
-  expect(car.prop('handleStartCar')).toEqual(actions.handleStartCar);
+  expect(car.prop('handleStartCar')).toEqual(props.handleStartCar);
 });

@@ -1,3 +1,3 @@
-export const handleStartCar = () => {
-  console.log('car has started');
-};
+export const handleStartCar = () =>({
+  type: 'HANDLE_START_CAR'
+});

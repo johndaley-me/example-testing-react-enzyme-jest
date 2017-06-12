@@ -3,9 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 import Car from './Car';
 import * as actions from './actions';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
-class App extends Component {
+export class App extends Component {
   render() {
+    const { handleStartCar, isRunning } = this.props;
     return (
       <div className="App">
         <div className="App-header">
@@ -13,12 +16,28 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          {isRunning ? 'The car is running  ' : 'Click to start the car'}
         </p>
-        <Car color='blue' handleStartCar={actions.handleStartCar} />
+        <Car color='blue' handleStartCar={handleStartCar} />
       </div>
     );
   }
 }
-
-export default App;
+App.propTypes = {
+  // Redux store
+  isRunning: PropTypes.bool,
+  // advertiseActions
+  handleStartCar: PropTypes.func
+};
+App.defaultProps = {
+  isRunning: false,
+  handleStartCar: () => {
+    console.log('car started');
+  }
+}
+export default connect(
+  (state) => ({
+    isRunning: state.isRunning
+  }),
+  {...actions}
+)(App);
