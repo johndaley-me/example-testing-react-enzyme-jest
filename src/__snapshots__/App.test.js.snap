@@ -1,0 +1,40 @@
+exports[`test matches snapshot 1`] = `
+<div
+  className="App">
+  <div
+    className="App-header">
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.svg" />
+    <h2>
+      Welcome to React
+    </h2>
+  </div>
+  <p
+    className="App-intro">
+    Click to start the car
+  </p>
+  <div>
+    <h1
+      id="car--heading">
+      I am a 
+      blue
+       car
+    </h1>
+    <div>
+      <span
+        id="engine--type">
+        diesel
+         type
+      </span>
+    </div>
+    <button
+      id="car--start"
+      onClick={[Function]}
+      type="button">
+      Start
+    </button>
+  </div>
+</div>
+`;

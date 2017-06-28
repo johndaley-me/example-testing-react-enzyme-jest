@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import { App } from './App';
 import Car from './Car';
 import * as actions from './actions';
+import renderer from 'react-test-renderer';
 
 it('renders without crashing', () => {
   shallow(<App />);
@@ -22,4 +23,11 @@ it('renders Car', () => {
   const car = wrapper.find(Car);
   expect(car).toHaveLength(1);
   expect(car.prop('handleStartCar')).toEqual(props.handleStartCar);
+});
+it('matches snapshot', () => {
+  const component = renderer.create(
+    <App />
+  );
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });
