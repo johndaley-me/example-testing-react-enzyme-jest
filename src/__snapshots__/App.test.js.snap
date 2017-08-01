@@ -1,40 +1,113 @@
-exports[`test matches snapshot 1`] = `
-<div
-  className="App">
+exports[`<App /> matches snapshot 1`] = `
+<App
+  handleStartCar={[Function]}
+  isRunning={false}>
   <div
-    className="App-header">
-    <img
-      alt="logo"
-      className="App-logo"
-      src="logo.svg" />
-    <h2>
-      Welcome to React
-    </h2>
-  </div>
-  <p
-    className="App-intro">
-    Click to start the car
-  </p>
-  <div>
-    <h1
-      id="car--heading">
-      I am a 
-      blue
-       car
-    </h1>
-    <div>
-      <span
-        id="engine--type">
-        diesel
-         type
-      </span>
+    className="App">
+    <div
+      className="App-header">
+      <img
+        alt="logo"
+        className="App-logo"
+        src="logo.svg" />
+      <h2>
+        Welcome to React
+      </h2>
     </div>
-    <button
-      id="car--start"
-      onClick={[Function]}
-      type="button">
-      Start
-    </button>
+    <p
+      className="App-intro">
+      Click to start the car
+    </p>
+    <Car
+      color="blue"
+      handleStartCar={[Function]}>
+      <div>
+        <h1
+          id="car--heading"
+          style={
+            Object {
+              "color": "blue",
+            }
+          }>
+          I am a 
+          blue
+           car
+        </h1>
+        <Engine
+          type="diesel">
+          <div>
+            <span
+              id="engine--type">
+              diesel
+               type
+            </span>
+          </div>
+        </Engine>
+        <button
+          id="car--start"
+          onClick={[Function]}
+          type="button">
+          Start
+        </button>
+      </div>
+    </Car>
   </div>
-</div>
+</App>
+`;
+
+exports[`<App /> matches snapshot 2`] = `
+<App
+  handleStartCar={[Function]}
+  isRunning={true}>
+  <div
+    className="App">
+    <div
+      className="App-header">
+      <img
+        alt="logo"
+        className="App-logo"
+        src="logo.svg" />
+      <h2>
+        Welcome to React
+      </h2>
+    </div>
+    <p
+      className="App-intro">
+      The car is running  
+    </p>
+    <Car
+      color="blue"
+      handleStartCar={[Function]}>
+      <div>
+        <h1
+          id="car--heading"
+          style={
+            Object {
+              "color": "blue",
+            }
+          }>
+          I am a 
+          blue
+           car
+        </h1>
+        <Engine
+          type="diesel">
+          <div>
+            <span
+              id="engine--type">
+              diesel
+               type
+            </span>
+          </div>
+        </Engine>
+        <button
+          id="car--start"
+          onClick={[Function]}
+          type="button">
+          Start
+        </button>
+      </div>
+    </Car>
+  </div>
+</App>
 `;

@@ -9,10 +9,12 @@ describe('reducer', () => {
       };
       const action = actions.handleStartCar();
       const nextState = reducer(previousState, action);
-      expect(nextState).toEqual({
+      /* expect(nextState).toEqual({
         isRunning: true,
         otherProp: 'test-123'
-      });
+      }); */
+      // use snapshot instead of boilerplate to check all the properties
+      expect(nextState).toMatchSnapshot();
     });
   });
 });

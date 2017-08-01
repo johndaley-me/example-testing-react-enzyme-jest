@@ -1,0 +1,5 @@
+exports[`actions handleStartCar returns type HANDLE_START_CAR with payload 1`] = `
+Object {
+  "type": "HANDLE_START_CAR",
+}
+`;

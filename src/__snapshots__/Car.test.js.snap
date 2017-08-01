@@ -1,0 +1,23 @@
+exports[`<Car /> matches snapshot 1`] = `
+<div>
+  <h1
+    id="car--heading"
+    style={
+      Object {
+        "color": "red",
+      }
+    }>
+    I am a 
+    red
+     car
+  </h1>
+  <Engine
+    type="diesel" />
+  <button
+    id="car--start"
+    onClick={[Function]}
+    type="button">
+    Start
+  </button>
+</div>
+`;

@@ -1,7 +1,8 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import { Car } from './Car';
 import Engine from './Engine';
+import toJson from 'enzyme-to-json';
 
 describe('<Car />', () => {
   let wrapper;
@@ -9,6 +10,9 @@ describe('<Car />', () => {
   beforeAll(() => {
     handleStartCar = jest.fn();
     wrapper = shallow(<Car color='red' handleStartCar={handleStartCar} />);
+  });
+  it('matches snapshot', () => {
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
   // check dynamic data renders correctly
   // find elements by ID
@@ -30,6 +34,6 @@ describe('<Car />', () => {
     const button = wrapper.find('#car--start');
     expect(button).toHaveLength(1);
     button.simulate('click');
-    expect(handleStartCar).toHaveBeenCalledTimes(1);
+    expect(handleStartCar).toHaveBeenCalledWith({ startTime: 223 });
   });
 });

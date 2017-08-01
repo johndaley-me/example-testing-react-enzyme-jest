@@ -1,0 +1,6 @@
+exports[`reducer HANDLE_START_CAR sets isRunning to true 1`] = `
+Object {
+  "isRunning": true,
+  "otherProp": "test-123",
+}
+`;
