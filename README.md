@@ -16,8 +16,12 @@ This mini-course primarily targets those who are new at React unit testing or ha
 
 ## Setup
 ```
+# not strictly necessary but a good idea to install create-react-app
+npm install -g create-react-app
+
 git clone git@github.com:johndaley-me/example-testing-react-enzyme-jest.git
 # or git clone https://github.com/johndaley-me/example-testing-react-enzyme-jest.git
+cd example-testing-react-enzyme-jest
 npm install
 # start the application and launch browser
 npm start
