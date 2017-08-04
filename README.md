@@ -95,7 +95,6 @@ _Hint: Look in `./src/reducer.js`_
 There's not much to say here that hasn't already been said in Exercise 4.
 
 ## Extra Credit
-* Remove `export { Car };` from `./src/Car.js`. Add `export ` before `const Car`. What does the snapshot error tell you?
 * Try importing the React Component in the tests using the default export and not the named export. Can you see how this would be significant if you were using higher-order components with a library such as [Recompose](https://github.com/acdlite/recompose)
 * Replace the `toJson(wrapper)` in the tests with just `wrapper`. Take a look at how the snapshot output changes.
 * Write some tests using other Jest matchers besides snapshots.
