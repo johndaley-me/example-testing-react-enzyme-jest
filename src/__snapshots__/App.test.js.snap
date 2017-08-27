@@ -1,26 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<App /> matches snapshot 1`] = `
 <App
   handleStartCar={[Function]}
-  isRunning={false}>
+  isRunning={false}
+>
   <div
-    className="App">
+    className="App"
+  >
     <div
-      className="App-header">
+      className="App-header"
+    >
       <img
         alt="logo"
         className="App-logo"
-        src="logo.svg" />
+        src="logo.svg"
+      />
       <h2>
         Welcome to React
       </h2>
     </div>
     <p
-      className="App-intro">
+      className="App-intro"
+    >
       Click to start the car
     </p>
     <Car
       color="blue"
-      handleStartCar={[Function]}>
+      handleStartCar={[Function]}
+    >
       <div>
         <h1
           id="car--heading"
@@ -28,16 +36,19 @@ exports[`<App /> matches snapshot 1`] = `
             Object {
               "color": "blue",
             }
-          }>
+          }
+        >
           I am a 
           blue
            car
         </h1>
         <Engine
-          type="diesel">
+          type="diesel"
+        >
           <div>
             <span
-              id="engine--type">
+              id="engine--type"
+            >
               diesel
                type
             </span>
@@ -46,7 +57,8 @@ exports[`<App /> matches snapshot 1`] = `
         <button
           id="car--start"
           onClick={[Function]}
-          type="button">
+          type="button"
+        >
           Start
         </button>
       </div>
@@ -58,26 +70,32 @@ exports[`<App /> matches snapshot 1`] = `
 exports[`<App /> matches snapshot 2`] = `
 <App
   handleStartCar={[Function]}
-  isRunning={true}>
+  isRunning={true}
+>
   <div
-    className="App">
+    className="App"
+  >
     <div
-      className="App-header">
+      className="App-header"
+    >
       <img
         alt="logo"
         className="App-logo"
-        src="logo.svg" />
+        src="logo.svg"
+      />
       <h2>
         Welcome to React
       </h2>
     </div>
     <p
-      className="App-intro">
+      className="App-intro"
+    >
       The car is running  
     </p>
     <Car
       color="blue"
-      handleStartCar={[Function]}>
+      handleStartCar={[Function]}
+    >
       <div>
         <h1
           id="car--heading"
@@ -85,16 +103,19 @@ exports[`<App /> matches snapshot 2`] = `
             Object {
               "color": "blue",
             }
-          }>
+          }
+        >
           I am a 
           blue
            car
         </h1>
         <Engine
-          type="diesel">
+          type="diesel"
+        >
           <div>
             <span
-              id="engine--type">
+              id="engine--type"
+            >
               diesel
                type
             </span>
@@ -103,7 +124,8 @@ exports[`<App /> matches snapshot 2`] = `
         <button
           id="car--start"
           onClick={[Function]}
-          type="button">
+          type="button"
+        >
           Start
         </button>
       </div>

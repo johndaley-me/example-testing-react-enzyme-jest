@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`reducer HANDLE_START_CAR sets isRunning to true 1`] = `
 Object {
   "isRunning": true,
