@@ -64,7 +64,7 @@ Increase the size of the React logo to `120px`.
 
 _Hint: Look for `.App-logo` in `./src/App.css`_
 
-Were you expect to see a testing error? We can see that a Jest snapshot test is not the same thing as a visual regression that may compare actual screenshots.
+Were you expecting to see a testing error? We can see that a Jest snapshot test is not the same thing as a visual regression that may compare actual screenshots.
 
 Now, modify the Car snapshot test to pass the color `blue` instead of `red`.
 
